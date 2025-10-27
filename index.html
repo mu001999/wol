@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>假期刮刮乐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎫 刮刮乐</h1>
+            <div class="rules-info">
+                <p class="rule-text">🎯 中奖规则：刮出"福"或"财"字即可获得对应假期</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="scratch-cards">
+                <div class="card-row">
+                    <div class="scratch-card" data-card-id="1">
+                        <canvas class="scratch-canvas" width="180" height="200"></canvas>
+                        <div class="prize-content">
+                            <div class="lucky-word">福</div>
+                            <div class="prize-amount"></div>
+                            <div class="prize-type"></div>
+                        </div>
+                    </div>
+                    <div class="scratch-card" data-card-id="2">
+                        <canvas class="scratch-canvas" width="180" height="200"></canvas>
+                        <div class="prize-content">
+                            <div class="lucky-word">禄</div>
+                            <div class="prize-amount"></div>
+                            <div class="prize-type"></div>
+                        </div>
+                    </div>
+                    <div class="scratch-card" data-card-id="3">
+                        <canvas class="scratch-canvas" width="180" height="200"></canvas>
+                        <div class="prize-content">
+                            <div class="lucky-word">寿</div>
+                            <div class="prize-amount"></div>
+                            <div class="prize-type"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-row">
+                    <div class="scratch-card" data-card-id="4">
+                        <canvas class="scratch-canvas" width="180" height="200"></canvas>
+                        <div class="prize-content">
+                            <div class="lucky-word">喜</div>
+                            <div class="prize-amount"></div>
+                            <div class="prize-type"></div>
+                        </div>
+                    </div>
+                    <div class="scratch-card" data-card-id="5">
+                        <canvas class="scratch-canvas" width="180" height="200"></canvas>
+                        <div class="prize-content">
+                            <div class="lucky-word">财</div>
+                            <div class="prize-amount"></div>
+                            <div class="prize-type"></div>
+                        </div>
+                    </div>
+                    <div class="scratch-card" data-card-id="6">
+                        <canvas class="scratch-canvas" width="180" height="200"></canvas>
+                        <div class="prize-content">
+                            <div class="lucky-word">吉</div>
+                            <div class="prize-amount"></div>
+                            <div class="prize-type"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- 移除底部统计和控制区域 -->
+        </main>
+
+        <!-- 隐蔽的兑奖信息 -->
+        <footer style="text-align: center; margin-top: 30px; opacity: 0.3;">
+            <p style="font-size: 10px; color: #999;">💼 兑奖请联系贵公司</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
