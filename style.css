@@ -279,62 +279,257 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 15px;
+        margin: 10px;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .info {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .info p {
+        font-size: 0.9em;
+        margin: 3px 0;
+    }
+
+    .scratch-cards {
+        margin: 15px 0;
     }
 
     .card-row {
-        gap: 15px;
+        gap: 10px;
+        margin-bottom: 10px;
     }
 
     .scratch-card {
-        width: 150px;
-        height: 180px;
+        width: 100px;
+        height: 120px;
     }
 
     .scratch-canvas {
-        width: 150px;
-        height: 180px;
+        width: 100px;
+        height: 120px;
     }
 
     .lucky-word {
-        font-size: 2.5em;
+        font-size: 1.8em;
+        margin-top: 5px;
     }
 
     .prize-amount {
-        font-size: 1.5em;
+        font-size: 1em;
+    }
+
+    .prize-type {
+        font-size: 0.8em;
+    }
+
+    .prize-content {
+        padding: 10px 0;
     }
 
     .stats {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .stats p {
+        font-size: 0.9em;
     }
 
     .rule-text {
         font-size: 0.9em;
     }
+
+    .reset-button {
+        padding: 10px 20px;
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 10px 5px;
+        margin: 5px;
+    }
+
     .card-row {
-        flex-direction: column;
-        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
     }
 
     .scratch-card {
-        width: 180px;
-        height: 200px;
+        width: 90px;
+        height: 110px;
     }
 
     .scratch-canvas {
-        width: 180px;
-        height: 200px;
+        width: 90px;
+        height: 110px;
     }
 
     .lucky-word {
-        font-size: 3em;
+        font-size: 1.6em;
+    }
+
+    .prize-amount {
+        font-size: 0.9em;
+    }
+
+    .prize-type {
+        font-size: 0.7em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 0.9em;
+    }
+
+    .rules-section {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .rules-section h3 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .rule-item {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .rule-number {
+        width: 25px;
+        height: 25px;
+        font-size: 0.9em;
+    }
+
+    .rule-text {
+        font-size: 0.85em;
+    }
+
+    .reset-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        margin-top: 15px;
+        font-size: 0.8em;
+    }
+}
+
+/* 超小屏幕优化 */
+@media (max-width: 375px) {
+    .container {
+        padding: 8px 3px;
+        margin: 3px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .subtitle {
+        font-size: 0.8em;
+    }
+
+    .info {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .info p {
+        font-size: 0.8em;
+    }
+
+    .scratch-cards {
+        margin: 10px 0;
+    }
+
+    .card-row {
+        gap: 6px;
+        margin-bottom: 6px;
+    }
+
+    .scratch-card {
+        width: 80px;
+        height: 95px;
+    }
+
+    .scratch-canvas {
+        width: 80px;
+        height: 95px;
+    }
+
+    .lucky-word {
+        font-size: 1.4em;
+        margin-top: 3px;
+    }
+
+    .prize-amount {
+        font-size: 0.8em;
+    }
+
+    .prize-type {
+        font-size: 0.65em;
+    }
+
+    .prize-content {
+        padding: 8px 0;
+    }
+
+    .reset-button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    .rules-section {
+        padding: 12px;
+        margin: 12px 0;
+    }
+
+    .rules-section h3 {
+        font-size: 1.1em;
+        margin-bottom: 12px;
+    }
+
+    .rule-item {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .rule-number {
+        width: 22px;
+        height: 22px;
+        font-size: 0.8em;
+    }
+
+    .rule-text {
+        font-size: 0.8em;
+    }
+
+    footer {
+        margin-top: 10px;
+        font-size: 0.7em;
     }
 }
