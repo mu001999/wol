@@ -187,6 +187,11 @@ class ScratchCard {
                 return;
             }
 
+            // 防止页面滚动和默认行为
+            if (e.type === 'touchstart') {
+                e.preventDefault();
+            }
+
             isScratching = true;
             const pos = getMousePos(e);
             scratch(pos.x, pos.y);
@@ -194,6 +199,11 @@ class ScratchCard {
 
         const scratchMove = (e) => {
             if (!isScratching) return;
+
+            // 防止页面滚动和默认行为
+            if (e.type === 'touchmove') {
+                e.preventDefault();
+            }
 
             const pos = getMousePos(e);
             scratch(pos.x, pos.y);

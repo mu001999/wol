@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; /* 移除点击高亮 */
+    -webkit-touch-callout: none; /* 禁用长按菜单 */
+    -webkit-user-select: none; /* 禁用文本选择 */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -12,6 +18,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    overflow-x: hidden; /* 防止横向滚动 */
+    touch-action: manipulation; /* 优化触摸响应 */
 }
 
 .container {
@@ -108,6 +116,7 @@ h1 {
     left: 0;
     border-radius: 15px;
     z-index: 2;
+    touch-action: none; /* 防止触摸时页面滚动 */
 }
 
 .prize-content {
